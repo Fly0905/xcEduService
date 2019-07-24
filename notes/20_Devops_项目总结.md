@@ -106,7 +106,7 @@ docker run --name gitlab -d --link postgresql:postgresql --link redis:redisio --
 
 ## 三、Git&GitLab-使用Git管理项目
 
-给gitlab添加.ssh下的sshkey。
+给gitlab添加`.ssh`下的sshkey。
 
 ## 四、Docker-Docker介绍
 
