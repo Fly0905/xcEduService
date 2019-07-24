@@ -1,0 +1,24 @@
+server:
+  port: 31000
+spring:
+  application:
+    name: xc-service-manage-cms-client
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/xc_cmstestAddDoc
+      database: xc_cms
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+#xuecheng:
+#  mq:
+#    queue: queue_cms_postpage_01 #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
+#    routingKey: 5a751fab6abb5044e0d19ea1	#此routingKey为门户站点ID
+xuecheng:
+  mq:
+    queue: queue_cms_postpage_03 #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
+    routingKey: 5a751fab6abb5044e0d19ea1  # 前面测试的 (test004)
+#    routingKey: 5ce9ff5d05a08117084289f0	# 后面测试课程发布(bootstrap高级课程)此routingKey为门户站点ID
