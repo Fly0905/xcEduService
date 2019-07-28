@@ -11,6 +11,9 @@
 .sts4-cache
 
 ### IntelliJ IDEA ###
+*idea*
+D:/xcCode/xcEduService01/.idea/
+D:/xcCode/xcEduService01/.idea/*
 ./.idea/*
 .idea/*
 .idea\\*.xml
