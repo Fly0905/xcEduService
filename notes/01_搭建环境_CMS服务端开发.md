@@ -207,6 +207,10 @@ public class ManageCmsApplication {
 
 ## 二十、页面查询服务端开发-创建CMS服务工程-测试Controller
 
+为什么要将接口单独定义，并且单独出来一个API工程呢？
+
+因为目前我们的Controller是用SpringMVC写的，哪天我们要换了，只需要换技术即可，不需要换接口的代码。
+
 ```java
 /**
  * 测试Page查询
