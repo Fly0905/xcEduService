@@ -36,12 +36,12 @@ public class ExceptionCatch {
     }
 
     //使用EXCEPTIONS存放异常类型和错误代码的映射，ImmutableMap的特点的一旦创建不可改变，并且线程安全
-    private static ImmutableMap<Class<? extends Throwable>,ResultCode> exceptionMap;
+    private static ImmutableMap<Class<? extends Throwable>, ResultCode> exceptionMap;
 
     //使用builder来构建一个异常类型和错误代码的异常
-    protected static ImmutableMap.Builder<Class<? extends Throwable>,ResultCode> builder = ImmutableMap.builder();
+    protected static ImmutableMap.Builder<Class<? extends Throwable>, ResultCode> builder = ImmutableMap.builder();
 
-    static{
+    static {
         //在这里加入一些基础的异常类型判断
         builder.put(HttpMessageNotReadableException.class, CommonCode.INVALID_PARAM);
     }
@@ -51,8 +51,8 @@ public class ExceptionCatch {
     @ExceptionHandler(Exception.class)
     public ResponseResult exception(Exception e) {
         e.printStackTrace();
-        log.error("catch exception : {} \r\n exception: ",e.getMessage(), e);
-        if(exceptionMap == null) {
+        log.error("catch exception : {} \r\n exception: ", e.getMessage(), e);
+        if (exceptionMap == null) {
             exceptionMap = builder.build(); // EXCEPTIONS构建完毕
         }
         // 从EXCEPTIONS中寻找异常类型对应的错误代码，如果找到了将错误代码响应给用户，如果找不到就返回给用户9999

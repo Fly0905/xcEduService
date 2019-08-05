@@ -15,3 +15,4 @@ public class GenerateHtmlResult extends ResponseResult {
         this.html = html;
     }
 }
+
