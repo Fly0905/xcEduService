@@ -662,9 +662,9 @@ go_back(){
 
 **$route**为当前router跳转对象里面可以获取name、path、query、params等
 
-a、通过在路由上添加key/value串使用this.$route.query来取参数，例如：/router1?id=123 ,/router1?id=456
-可以通过this.$route.query.id获取参数id的值。
-b、通过将参数作为路由一部分进行传参数使用this.$route.params来获取，例如：定义的路由为/router1/:id ，请求/router1/123时可以通过this.$route.params.id来获取，此种情况用this.$route.query.id是拿不到的。
+a、通过在路由上添加`key/value`串使用`this.$route.query`来取参数，例如：`/router1?id=123 ,/router1?id=456`
+可以通过`this.$route.query.id`获取参数id的值。
+b、通过将参数作为路由一部分进行传参数使用`this.$route.params`来获取，例如：定义的路由为`/router1/:id` ，请求/router1/123时可以通过`this.$route.params.id`来获取，此种情况用`this.$route.query.i`d是拿不到的。
 
 
 
