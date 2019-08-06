@@ -289,7 +289,7 @@ vue入门程序
             user: {uname: 'zhangsan', age: 10},
             userlist: [
                 {user: {uname: 'zxzxin', age: 10}},
-                {user: {uname: 'luoying', age: 11}}
+                {user: {uname: 'lisi', age: 14}} //changed
             ]
         }
     });
