@@ -1,12 +1,14 @@
 # 在线课堂微服务项目
 
-功能模块:
+### 一、使用技术
+
+**SpringCloud、ElasticSearch、Redis、RabbitMQ、Mysql、MongoDB、Mybatis、JPA、Spring Security、Spring Task、GridFS、Docker等**
+
+### 二、功能模块
 
 ![11](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1566407444517.png)
 
-
-
-技术栈:
+### 三、演示
 
 ![22](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1566399145982.png)
 
