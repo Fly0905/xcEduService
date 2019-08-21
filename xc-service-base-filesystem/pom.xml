@@ -13,6 +13,12 @@
     <artifactId>xc-service-base-filesystem</artifactId>
 
     <dependencies>
+
+        <!--资源服务中用到认证-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.xuecheng</groupId>
             <artifactId>xc-service-api</artifactId>
