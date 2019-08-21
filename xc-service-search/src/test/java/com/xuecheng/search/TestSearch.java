@@ -35,7 +35,7 @@ public class TestSearch {
     //搜索type下的全部记录
     @Test
     public void testSearchAll() throws IOException {
-        SearchRequest searchRequest = new SearchRequest("xc_course");
+        SearchRequest searchRequest = new SearchRequest("xc_course_test");
         searchRequest.types("doc");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query(QueryBuilders.matchAllQuery());

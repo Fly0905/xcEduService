@@ -46,7 +46,7 @@ public class TestIndex {
     @Test
     public void testCreateIndex() throws IOException {
         //创建索引对象
-        CreateIndexRequest createIndexRequest = new CreateIndexRequest("xc_course");
+        CreateIndexRequest createIndexRequest = new CreateIndexRequest("xc_course_test");
         //设置参数
         createIndexRequest.settings(Settings.builder().put("number_of_shards", "1")
                 .put("number_of_replicas", "0")
@@ -86,7 +86,7 @@ public class TestIndex {
     @Test
     public void testDeleteIndex() throws IOException {
         //删除索引对象
-        DeleteIndexRequest deleteIndexRequest = new DeleteIndexRequest("xc_course");
+        DeleteIndexRequest deleteIndexRequest = new DeleteIndexRequest("xc_course_test");
         //操作索引的客户端
         IndicesClient indices = client.indices();
         //执行删除索引
@@ -110,7 +110,7 @@ public class TestIndex {
         jsonMap.put("price", 5.6f);
 
         //创建索引创建对象
-        IndexRequest indexRequest = new IndexRequest("xc_course", "doc");
+        IndexRequest indexRequest = new IndexRequest("xc_course_test", "doc");
         //文档内容
         indexRequest.source(jsonMap);
         //通过client进行http的请求
@@ -124,9 +124,9 @@ public class TestIndex {
     public void getDoc() throws IOException {
         //需要制定id
         GetRequest getRequest = new GetRequest(
-                "xc_course",
+                "xc_course_test",
                 "doc",
-                "WetWAWsBRLTaZmn7mITM");
+                "bxeSrmwB08GlAkhsSDhF");
         GetResponse getResponse = client.get(getRequest);
         boolean exists = getResponse.isExists();
         Map<String, Object> sourceAsMap = getResponse.getSourceAsMap();
@@ -136,8 +136,8 @@ public class TestIndex {
     //更新文档
     @Test
     public void updateDoc() throws IOException {
-        UpdateRequest updateRequest = new UpdateRequest("xc_course", "doc",
-                "WetWAWsBRLTaZmn7mITM");
+        UpdateRequest updateRequest = new UpdateRequest("xc_course_test", "doc",
+                "bxeSrmwB08GlAkhsSDhF");
         Map<String, String> map = new HashMap<>();
         // 原来是 "spring cloud实战" 修改成 "SpringCloud实战"
         map.put("name", "SpringCloud实战");
@@ -151,9 +151,9 @@ public class TestIndex {
     @Test
     public void testDelDoc() throws IOException {
         //删除文档id
-        String id = "WetWAWsBRLTaZmn7mITM";
+        String id = "bxeSrmwB08GlAkhsSDhF";
         //删除索引请求对象
-        DeleteRequest deleteRequest = new DeleteRequest("xc_course", "doc", id);
+        DeleteRequest deleteRequest = new DeleteRequest("xc_course_test", "doc", id);
         //响应对象
         DeleteResponse deleteResponse = client.delete(deleteRequest);
         //获取响应结果

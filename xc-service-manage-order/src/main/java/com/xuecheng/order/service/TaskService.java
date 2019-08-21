@@ -79,7 +79,7 @@ public class TaskService {
             XcTaskHis xcTaskHis = new XcTaskHis();
             BeanUtils.copyProperties(xcTask, xcTaskHis);
             xcTaskHisRepository.save(xcTaskHis);
-            xcTaskRepository.delete(xcTask); // 原有的里面删除
+            xcTaskRepository.delete(xcTask);  // 原有的里面删除
         }
     }
 }
