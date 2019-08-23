@@ -18,7 +18,7 @@
 
 课程搜索界面:
 
-![444.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1566407230525.png)
+![1566536890422](assets/1566536890422.png)
 
 课程介绍页面:
 
