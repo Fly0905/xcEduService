@@ -18,7 +18,7 @@
 
 课程搜索界面:
 
-![1566536890422](assets/1566536890422.png)
+![course.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1566536890422.png)
 
 课程介绍页面:
 
@@ -44,4 +44,4 @@
 
 页面管理:
 
-![1542195579711.png](assets/1542195579711.png)
+![page.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1542195579711.png)
