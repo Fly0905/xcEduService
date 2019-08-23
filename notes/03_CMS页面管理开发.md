@@ -1314,10 +1314,8 @@ public CmsPageResult add(CmsPage cmsPage){
 
 ### 2、问题：
 
-1、上边的代码只要操作不成功仅向用户返回“错误代码：11111，失败信息：操作失败”，无法区别具体的错误信
-息。
-2、service方法在执行过程出现异常在哪捕获？在service中需要都加try/catch，如果在controller也需要添加
-try/catch，代码冗余严重且不易维护。
+1、上边的代码只要操作不成功仅向用户返回“错误代码：11111，失败信息：操作失败”，无法区别具体的错误信息。
+2、service方法在执行过程出现异常在哪捕获？在service中需要都加try/catch，如果在controller也需要添加try/catch，代码冗余严重且不易维护。
 
 ### 3、解决方案：
 

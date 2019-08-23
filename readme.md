@@ -2,7 +2,7 @@
 
 ### 一、使用技术
 
-**SpringCloud、ElasticSearch、Redis、RabbitMQ、Mysql、MongoDB、Mybatis、JPA、Spring Security、Spring Task、GridFS、Docker等**
+**SpringCloud、ElasticSearch、Redis、RabbitMQ、Mysql、MongoDB、Mybatis、JPA、Spring Security、Spring Task、GridFS、Nginx、Docker等**
 
 ### 二、功能模块
 
@@ -41,3 +41,7 @@
 管理视频:
 
 ![10.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1566408605828.png)
+
+页面管理:
+
+![1542195579711.png](assets/1542195579711.png)

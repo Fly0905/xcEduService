@@ -1089,5 +1089,13 @@ mounted() {
 
 ![1557410690261](assets/1557410690261.png)
 
-
-
+1、在浏览器输入前端url
+2、前端框架vue.js根据url解析路由，根据路由找到page_list.vue页面
+3、首先执行page_list.vue中的钩子方法
+4、在钩子方法中调用query方法。
+5、在query方法中调用cms.js中的page_list方法
+6、cms.js中的page_list方法通过axios请求服务端接口
+7、采用proxyTable解决跨域问题，node.js将请求转发到服务端(http://localhost:31001/cms/page/list)
+8、服务端处理，将查询结果响应给前端
+9、成功响应调用then方法，在then方法中处理响应结果，将查询结果赋值给数据模型中的total和list变量。
+10、vue.js通过双向数据绑定将list数据渲染输出。
