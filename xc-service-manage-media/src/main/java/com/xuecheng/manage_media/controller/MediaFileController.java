@@ -21,7 +21,6 @@ public class MediaFileController implements MediaFileControllerApi {
 
     @Override
     @GetMapping("/list/{page}/{size}")
-
     public QueryResponseResult findList(@PathVariable("page") int page, @PathVariable("size")
             int size, QueryMediaFileRequest queryMediaFileRequest) {
         //媒资文件查询

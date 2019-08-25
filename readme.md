@@ -26,7 +26,7 @@
 
 课程学习:
 
-![666.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1560789038533.png)
+![1566717674225](assets/1566717674225.png)
 
 个人中心:
 
@@ -44,4 +44,4 @@
 
 页面管理:
 
-![page.png](https://gitee.com/zxzxin/xcEduService/raw/master/assets/1542195579711.png)
+![1566717779200](assets/1566717779200.png)

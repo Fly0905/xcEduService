@@ -29,9 +29,6 @@ public class FileSystemController implements FileSystemControllerApi {
                                    @RequestParam(value = "metedata", required = false)
                                    String metadata) {
 
-        log.info("------------------------xxxx----------------");
-        System.out.println("------------------------xxxx----------------");
-
         return fileSystemService.upload(file, filetag, businesskey, metadata);
     }
 }

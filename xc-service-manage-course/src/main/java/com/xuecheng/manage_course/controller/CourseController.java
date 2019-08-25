@@ -43,7 +43,7 @@ public class CourseController extends BaseController implements CourseController
 
 
     // 查询CourseList显示
-    @PreAuthorize("hasAuthority('course_find_list')")
+//    @PreAuthorize("hasAuthority('course_find_list')")
     @Override
     @GetMapping("/coursebase/list/{page}/{size}")
     public QueryResponseResult<CourseInfo> findCourseList(
@@ -68,7 +68,7 @@ public class CourseController extends BaseController implements CourseController
         return courseService.addCourseBase(courseBase);
     }
 
-    @PreAuthorize("hasAuthority('course_get_baseinfo')")
+//    @PreAuthorize("hasAuthority('course_get_baseinfo')")
     @Override
     @GetMapping("/coursebase/get/{courseId}")
     public CourseBase getCourseBaseById(@PathVariable("courseId") String courseId) throws
@@ -109,7 +109,7 @@ public class CourseController extends BaseController implements CourseController
         return courseService.saveCoursePic(courseId,pic);
     }
 
-    @PreAuthorize("hasAuthority('course_find_pic')")
+//    @PreAuthorize("hasAuthority('course_find_pic')")
     @Override
     @GetMapping("/coursepic/list/{courseId}")
     public CoursePic findCoursePic(@PathVariable("courseId") String courseId) {
