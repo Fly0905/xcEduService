@@ -15,4 +15,6 @@ public interface UserClient {
     @GetMapping("/ucenter/getuserext")
     XcUserExt getUserext(@RequestParam("username") String username);
 
+
+
 }

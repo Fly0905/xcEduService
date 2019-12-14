@@ -12,10 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author Administrator
- * @version 1.0
- **/
+
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication

@@ -5,10 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
-/**
- * @author Administrator
- * @version 1.0
- **/
+
 @SpringBootApplication //扫描所在包及子包的bean，注入到ioc中
 @EntityScan("com.xuecheng.framework.domain.filesystem")//扫描实体类
 @ComponentScan(basePackages={"com.xuecheng.api"})//扫描接口

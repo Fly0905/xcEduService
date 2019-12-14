@@ -9,11 +9,6 @@ import org.springframework.boot.autoconfigure.amqp.SimpleRabbitListenerContainer
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author Administrator
- * @version 1.0
- * @create 2018-07-12 9:04
- **/
 @Configuration
 public class RabbitMQConfig {
 
